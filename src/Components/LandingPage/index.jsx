@@ -17,16 +17,9 @@ export default function LandingPage() {
             goals by helping them save and invest with ease.
           </p>
 
-          {/* Create Account Button */}
-          <button
-            to="/signup"
-            className="w-[394px] h-[98px] bg-[#0C1825] text-white rounded-xl font-medium text-xl mb-10"
-          >
-            Create Free Account
-          </button>
           <Link
-            to="/signup"
-            className="w-[394px] h-[98px] bg-[#0C1825] text-white rounded-xl font-medium text-xl mb-10"
+            to="/signin"
+            className="block w-[394px] py-8 bg-[#0C1825] text-white rounded-xl font-medium text-xl mb-10 text-center"
           >
             Create Free Account
           </Link>
@@ -36,7 +29,7 @@ export default function LandingPage() {
           <img
             src={sideImage}
             alt="Placeholder"
-            className="w-full h-auto max-w-[800px] mx-auto rounded-lg shadow-md"
+            className="w-full h-auto max-w-[700px] mx-auto rounded-lg shadow-md"
           />
         </div>
       </div>
