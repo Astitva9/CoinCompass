@@ -1,4 +1,5 @@
 import sideImage from "../../assets/side-image.svg";
+import { Link } from "react-router";
 
 export default function LandingPage() {
   return (
@@ -17,9 +18,18 @@ export default function LandingPage() {
           </p>
 
           {/* Create Account Button */}
-          <button className="w-[394px] h-[98px] bg-[#0C1825] text-white rounded-xl font-medium text-xl mb-10">
+          <button
+            to="/signup"
+            className="w-[394px] h-[98px] bg-[#0C1825] text-white rounded-xl font-medium text-xl mb-10"
+          >
             Create Free Account
           </button>
+          <Link
+            to="/signup"
+            className="w-[394px] h-[98px] bg-[#0C1825] text-white rounded-xl font-medium text-xl mb-10"
+          >
+            Create Free Account
+          </Link>
         </div>
 
         <div className="w-1/2 sm:w-full">
