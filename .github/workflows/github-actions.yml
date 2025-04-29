@@ -26,8 +26,8 @@ jobs:
 
       - name: Set Git Identity
         run: |
-          git config user.name "Astitva9"
-          git config user.email "as.astitvasrivastava@gmail.com"
+          git config user.name "Astitva srivastava"
+          git config user.email "35329533+Astitva9@users.noreply.github.com"
 
       - name: Set up Node
         uses: actions/setup-node@v3
