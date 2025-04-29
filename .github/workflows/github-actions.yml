@@ -33,16 +33,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build
+      - name: Deploy
+        run: npm run deploy
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5.0.0
+      # - name: Configure GitHub Pages
+      #   uses: actions/configure-pages@v5.0.0
 
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v4.6.2
-        with:
-          path: "./dist"
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4.0.5
+      # - name: Upload a Build Artifact
+      #   uses: actions/upload-artifact@v4.6.2
+      #   with:
+      #     path: "./dist"
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4.0.5
