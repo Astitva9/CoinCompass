@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import backIcon from "../../assets/back-icon.svg";
 
 export default function SignIn() {
   return (
@@ -91,6 +92,19 @@ export default function SignIn() {
               className="font-semibold text-indigo-600 hover:text-indigo-500"
             >
               Sign Up
+            </Link>
+          </p>
+          <p className="mt-10 text-center text-sm/6 text-gray-500">
+            <Link
+              to="/"
+              className="font-semibold text-indigo-600 hover:text-indigo-500"
+            >
+              <img
+                src={backIcon}
+                alt="Back"
+                className="inline-block w-4 h-4 mr-1"
+              />
+              Go Back{" "}
             </Link>
           </p>
         </div>
