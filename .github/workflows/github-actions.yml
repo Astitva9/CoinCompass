@@ -21,6 +21,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Set Git Identity
+        run: |
+          git config user.name "astitva9"
+          git config user.email "as.astitvasrivastava@gmail.com"
+
       - name: Checkout
         uses: actions/checkout@v3
 
